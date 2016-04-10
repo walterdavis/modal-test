@@ -14,12 +14,12 @@
 ActiveRecord::Schema.define(version: 20160410212218) do
 
   create_table "posts", force: :cascade do |t|
-    t.string   "title",      limit: 255
-    t.text     "body",       limit: 65535
-    t.string   "image",      limit: 255
-    t.string   "permalink",  limit: 255
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.string   "title"
+    t.text     "body"
+    t.string   "image"
+    t.string   "permalink"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
